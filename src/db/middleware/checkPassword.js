@@ -29,6 +29,8 @@ const checkPassword = async (req, res, next) => {
             }
 
         res.status(200)
+        req.body.email = userDetails.dataValues.email
+        req.body.username = userDetails.dataValues.username
         next()
     } catch (error) {
         console.log(error)
