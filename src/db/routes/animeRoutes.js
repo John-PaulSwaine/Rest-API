@@ -4,10 +4,10 @@ const checkToken = require('../middleware/checkToken')
 
 const addAnime = require('../controllers/anime/addAnime')
 const listAllAnime = require('../controllers/anime/listAllAnime')
+const animeDetails = require('../controllers/anime/animeDetails')
 const updateStudio = require('../controllers/anime/updateStudio')
 const updateGenre = require('../controllers/anime/updateGenre')
 const deleteAnime = require('../controllers/anime/deleteAnime')
-const animeDetails = require('../controllers/anime/animeDetails')
 const deleteAllAnime = require('../controllers/anime/deleteAllAnime')
 
 animeRouter.post('/addAnime', checkToken, addAnime)
