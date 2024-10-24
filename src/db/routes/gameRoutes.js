@@ -2,7 +2,7 @@ const {Router} = require('express')
 const gameRouter = Router()
 const checkToken = require('../middleware/checkToken')
 
-const addGame = require('../controllers/addGame')
+const addGame = require('../controllers/games/addGame')
 const listAllGames = require('../controllers/games/listAllGames')
 const updateDeveloper = require('../controllers/games/updateDeveloper')
 const updateGenre = require('../controllers/games/updateGenre')
