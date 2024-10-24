@@ -1,4 +1,4 @@
-const Game = require('../models/gameModel');
+const Game = require('../../models/gameModel');
 
 const deleteAllGames = async (req, res) => {
     try {
