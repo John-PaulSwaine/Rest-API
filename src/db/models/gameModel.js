@@ -6,7 +6,7 @@ const Game = connection.define('Game', {
     title: {type:DataTypes.STRING, allowNull: false, defaultValue: 'not specified'},
     developer: {type:DataTypes.STRING, allowNull: true, defaultValue: 'not specified'},
     genre: {type:DataTypes.STRING, allowNull: false, defaultValue: 'not specified'},
-    ageRating: {type:DataTypes.INTEGER, unique: false, defaultValue: 'not specified'}
+    ageRating: {type:DataTypes.INTEGER, unique: false,}
 })
 
 module.exports = Game
