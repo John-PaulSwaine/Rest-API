@@ -5,9 +5,7 @@ const deleteGame = async (req, res) => {
         const output = await Game.destroy(            
             {where: {
                 title : req.body.title
-            },
-            truncate: true
-            }
+            }}
         )
         res.status(200).json(output)
         console.log(output)
